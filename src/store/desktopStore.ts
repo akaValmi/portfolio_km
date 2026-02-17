@@ -12,7 +12,8 @@ export type AppId =
     | 'notes'
     | 'music'
     | 'terminal'
-    | 'imageViewer';
+    | 'imageViewer'
+    | 'tamagotchi';
 
 interface WindowState {
     id: AppId;
@@ -54,6 +55,7 @@ const initialWindows: Record<AppId, WindowState> = {
     music: { id: 'music', title: 'Music Player', isOpen: false, isMinimized: false, zIndex: 1 },
     terminal: { id: 'terminal', title: 'Terminal', isOpen: false, isMinimized: false, zIndex: 1 },
     imageViewer: { id: 'imageViewer', title: 'Image Viewer', isOpen: false, isMinimized: false, zIndex: 1 },
+    tamagotchi: { id: 'tamagotchi', title: 'Tamagotchi', isOpen: false, isMinimized: false, zIndex: 1 },
 };
 
 export const useDesktopStore = create<DesktopState>((set) => ({

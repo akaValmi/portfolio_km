@@ -14,6 +14,7 @@ import { Notes } from '../apps/Notes';
 import { Music } from '../apps/Music';
 import { TerminalApp } from '../apps/TerminalApp';
 import { ImageViewer } from '../apps/ImageViewer';
+import { Tamagotchi } from '../apps/Tamagotchi';
 
 interface WindowProps {
     id: AppId;
@@ -33,6 +34,7 @@ const apps: Record<AppId, React.ComponentType<any>> = {
     music: Music,
     terminal: TerminalApp,
     imageViewer: ImageViewer,
+    tamagotchi: Tamagotchi,
 };
 
 const windowLayouts: Record<AppId, { top: string; left: string; width: string; height: string }> = {
@@ -48,6 +50,7 @@ const windowLayouts: Record<AppId, { top: string; left: string; width: string; h
     music: { top: '9rem', left: '14rem', width: 'min(720px, 92vw)', height: 'min(520px, 80vh)' },
     terminal: { top: '10rem', left: '6rem', width: 'min(680px, 90vw)', height: 'min(460px, 75vh)' },
     imageViewer: { top: '0', left: '0', width: '100vw', height: '100vh' },
+    tamagotchi: { top: '8rem', left: '10rem', width: 'min(420px, 90vw)', height: 'min(520px, 80vh)' },
 };
 
 export const Window: React.FC<WindowProps> = ({ id, constraintsRef }) => {

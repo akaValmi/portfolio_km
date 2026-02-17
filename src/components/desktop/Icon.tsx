@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDesktopStore, type AppId } from '../../store/desktopStore';
-import { Folder, Trash2, Settings, CalendarDays, StickyNote, Music2, Terminal, User, Mail, FileText, Briefcase, Calculator } from 'lucide-react';
+import { Folder, Trash2, Settings, CalendarDays, StickyNote, Music2, Terminal, User, Mail, FileText, Briefcase, Calculator, Heart } from 'lucide-react';
 
 interface IconProps {
     id: AppId;
@@ -22,6 +22,7 @@ const icons = {
     notes: StickyNote,
     music: Music2,
     terminal: Terminal,
+    tamagotchi: Heart,
 }
 
 export const Icon: React.FC<IconProps> = ({ id, label }) => {
