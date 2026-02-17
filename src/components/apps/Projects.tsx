@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Github, ChevronLeft, ChevronRight, Stethoscope, ShoppingBag, Dice5, Timer } from 'lucide-react';
 import { useDesktopStore } from '../../store/desktopStore';
 
 const projects = [
@@ -10,6 +10,7 @@ const projects = [
         color: 'bg-sky-500',
         images: ['/assets/1.png', '/assets/2.png', '/assets/3.png', '/assets/4.png'],
         status: 'Próximo a implementarse',
+                icon: Stethoscope,
         
     },
    
@@ -19,6 +20,7 @@ const projects = [
         tags: ['Next.js', 'Strapi', 'Tailwind'],
         color: 'bg-purple-500',
         demoUrl: 'https://giftjoy-frontend-strapi.vercel.app',
+                icon: ShoppingBag,
       //  githubUrl: 'https://github.com/',
     },
     
@@ -29,6 +31,7 @@ const projects = [
         color: 'bg-amber-500',
         demoUrl: 'https://frontend-dicepoker.vercel.app',
         githubUrl: 'https://github.com/akaValmi/backend_dicepoker',
+        icon: Dice5,
         
     },
     {
@@ -37,6 +40,8 @@ const projects = [
         tags: ['Next.js', 'Spotify API', 'Tailwind'],
         color: 'bg-green-500',
         demoUrl: 'https://pomorodio.vercel.app',
+        githubUrl: 'https://github.com/akaValmi/pomorodio',
+        icon: Timer,
     },
     
 ];
@@ -94,7 +99,9 @@ export const Projects = () => {
                         onClick={() => handleCardClick(p, i)}
                         className="group flex items-start gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/5 cursor-pointer"
                     >
-                        <div className={`w-12 h-12 rounded-lg ${p.color} flex-shrink-0 opacity-80 group-hover:opacity-100 transition-opacity`} />
+                        <div className={`w-12 h-12 rounded-lg ${p.color} flex-shrink-0 opacity-80 group-hover:opacity-100 transition-opacity flex items-center justify-center`}>
+                            <p.icon size={22} className="text-white/90" />
+                        </div>
 
                         <div className="flex-1 min-w-0">
                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1 gap-2">
