@@ -274,7 +274,7 @@ export default defineConfig({
 - **Portfolio en vivo**: [portfolio-km-sandy.vercel.app](https://portfolio-km-sandy.vercel.app)
 - **GitHub**: [@akaValmi](https://github.com/akaValmi)
 - **LinkedIn**: [kevin-miranda-5ba759275](https://www.linkedin.com/in/kevin-miranda-5ba759275/)
-- **Email**: kevin@ejemplo.com
+- **Email**: kev24miranda@gmail.com
 
 ## 📝 Comandos Útiles
 
